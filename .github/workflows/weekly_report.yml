@@ -1,9 +1,9 @@
-name: Weekly Real Estate Decision Report
+name: Real Estate Decision Report (Mon, Wed, Fri)
 
 on:
   schedule:
-    # 매주 월요일 오전 08:30 KST (UTC 일요일 23:30)
-    - cron: '30 23 * * 0'
+    # 매주 월, 수, 금 오전 08:30 KST (UTC 기준 일, 화, 목 23:30)
+    - cron: '30 23 * * 0,2,4'
   workflow_dispatch: # 언제든 수동 즉시 실행 가능
 
 permissions:
